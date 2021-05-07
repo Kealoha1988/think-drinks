@@ -29,11 +29,8 @@ code {
   background-color: rgb(255, 255, 255);
   padding:0.5em 3em;
   border:0.16em solid #6a6a6a;
-  margin:0 0.3em 0.3em 0;
   height: 10%;
-  width: 80%;
   margin: auto;
-  border-radius: 25px;
   width: auto;
 }
 
@@ -41,7 +38,6 @@ code {
   background-color: rgb(255, 255, 255);
   padding:0.5em 3em;
   border:0.16em solid #6a6a6a;
-  margin:0 0.3em 0.3em 0;
   width: 80%;
   margin: auto;
   border-radius: 50px;
@@ -67,6 +63,19 @@ code {
   color:#FFFFFF;
   text-align:center;
   transition: all 0.15s;
-  background-color: rgb(98, 97, 116);
+  background-color: rgb(76, 75, 104);
   border-radius: 300px;
+  }
+
+  .textBoxes{
+    border-radius: 200px;
+    padding:0.5em 1em;
+    margin:auto;
+    border:0.16em solid #a38383;
+    font-family: fantasy;
+  }
+
+  .youtube {
+    height: 200px;
+    width: 300px;
   }

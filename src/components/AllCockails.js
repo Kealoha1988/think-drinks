@@ -15,7 +15,7 @@ if (!!props.cocktails){
 } 
 
 
-const what = () => console.log(props.cocktails)
+
 
 
 

@@ -24,7 +24,7 @@ const [state, setstate] = useState({
 
   return (
     <div>
-      <input type="text" onChange={handleChange} id="box"></input>
+      <input type="text" onChange={handleChange} className="textBoxes" id="box"></input>
       <button className="button" onClick={getAllDrinks}>get it</button> 
       <br/><br/>
       <AllCockails name={state.name} cocktails={state.cocktails}/>
