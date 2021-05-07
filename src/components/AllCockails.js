@@ -1,22 +1,30 @@
 import React from 'react'
-import {useState} from 'react'
-
-export default function AllCockails() {
-
-const [state, setstate] = useState({cocktails: "none"})
+import SingleCocktail from './SingleCocktail'
+import {useEffect} from 'react'
 
 
+export default function AllCockails(props) {
 
-const getAllDrinks = () => {
-fetch("https://thecocktaildb.com/api/json/v2/9973533/search.php?s=margarita")
-.then(resp => resp.json())
-.then(data => setstate({cocktails: data.drinks}))
-}
+
+
+
+const mapThis = () => {
+if (!!props.cocktails){
+ return props.cocktails.map((drink, i) => <SingleCocktail key={i} name={drink.strDrink} picture={drink.strDrinkThumb} video={drink.strVideo} instructions={drink.strInstructions} spirit={drink.strIngredient1} ingredient1={drink.strIngredient2} ingredient2={drink.strIngredient3} ingredient3={drink.strIngredient4} ingredient4={drink.strIngredient5} ingredient5={drink.strIngredient6} glass={drink.strGlass}/>)
+}else{<h2>cool stuff</h2>}
+} 
+
+
+const what = () => console.log(props.cocktails)
+
+
+
+// const drinks = () => state.cocktails.map((drink, i) => <SingleCocktail key={i} name={drink.strDrink} spirit={drink.strIngredient1} ingredient1={drink.strIngredient2} ingredient2={drink.strIngredient3} ingredient3={drink.strIngredient4} ingredient4={drink.strIngredient5} ingredient5={drink.strIngredient6} />)
 
   return (
     <div>
-      <button onClick={getAllDrinks}>fetch me</button>
-      <p>{state.cocktails[0].strDrink}</p>
+      {mapThis()} 
     </div>
+
   )
 }
