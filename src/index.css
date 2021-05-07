@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Press+Start+2P&family=Monoton&family=Permanent+Marker&family=Ranchers&display=swap');
+
 body {
+  font-family: 'Monoton', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Ranchers', cursive;
+  font-family: 'Codystar', cursive;
+  font-family: 'Press Start 2P', cursive;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: darkcyan;
 }
 
 code {
@@ -12,11 +20,53 @@ code {
     monospace;
 }
 
+.App {
+  background-color: darkcyan;
+  font-family: 'Codystar', cursive;
+}
+
+.nav {
+  background-color: rgb(255, 255, 255);
+  padding:0.5em 3em;
+  border:0.16em solid #6a6a6a;
+  margin:0 0.3em 0.3em 0;
+  height: 10%;
+  width: 80%;
+  margin: auto;
+  border-radius: 25px;
+  width: auto;
+}
+
 .single {
-  background-color: rgb(134, 152, 152);
+  background-color: rgb(255, 255, 255);
+  padding:0.5em 3em;
+  border:0.16em solid #6a6a6a;
+  margin:0 0.3em 0.3em 0;
+  width: 80%;
+  margin: auto;
+  border-radius: 50px;
+  font-family: fantasy;
 }
 
 .images {
   width: 200px;
   height: 200px;
 }
+
+.button{
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid #d6d5ce;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:lowercase;
+  font-family: 'Codystar', cursive;
+  font-weight:400;
+  font-size: 12px;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.15s;
+  background-color: rgb(98, 97, 116);
+  border-radius: 300px;
+  }

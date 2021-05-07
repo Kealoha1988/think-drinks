@@ -1,6 +1,6 @@
 import React from 'react'
 import SingleCocktail from './SingleCocktail'
-import {useEffect} from 'react'
+
 
 
 export default function AllCockails(props) {
@@ -23,7 +23,7 @@ const what = () => console.log(props.cocktails)
 
   return (
     <div>
-      {mapThis()} 
+      {mapThis()}
     </div>
 
   )

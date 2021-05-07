@@ -3,7 +3,6 @@ import React from 'react'
 export default function SingleCocktail(props) {
 
 
-const hello = () => console.log(props)
 
   return (
     <div className="single">
@@ -13,8 +12,6 @@ const hello = () => console.log(props)
       <p><b>Instructions:</b>{props.instructions}</p>
       <p><b>Spirit:</b>{props.spirit}</p>
       <p><b>Ingredients:</b>{props.ingredient1}, {props.ingredient2}, {props.ingredient3}</p>
-
-      <button onClick={hello}>get it</button>
       </div>
   )
 }
